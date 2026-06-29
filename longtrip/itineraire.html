@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LongTrip | Itinéraire : Une Journée à Pékin</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .itineraire-hero {
+            background: linear-gradient(rgba(230, 57, 70, 0.7), rgba(29, 53, 87, 0.8)), url('https://images.unsplash.com/photo-1508804052814-cd3ba865a116?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+        }
+        .timeline {
+            max-width: 800px;
+            margin: 50px auto;
+            position: relative;
+            padding: 0 20px;
+        }
+        /* 路线时间轴竖线 */
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 40px;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: var(--primary-red);
+            border-radius: 2px;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+            padding-left: 80px;
+        }
+        .time-badge {
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: var(--text-dark);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            z-index: 2;
+        }
+        .timeline-content {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .timeline-content h3 { color: var(--accent-blue); margin-top: 0;}
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">LongTrip ✈️</div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="itineraire.html" style="color: var(--primary-red);">Itinéraire</a>
+            <a href="vie-pratique.html">Vie Pratique</a>
+            <a href="nourriture.html">Nourriture</a>
+            <a href="a-propos.html">À Propos</a>
+        </nav>
+    </header>
+
+    <section class="hero itineraire-hero">
+        <h1>Une Journée Parfaite à Pékin</h1>
+        <p>Vous n'avez que 24 heures ou vous cherchez le programme idéal pour votre premier week-end ? Suivez notre itinéraire testé et approuvé par les étudiants !</p>
+    </section>
+
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="time-badge">09:00</div>
+            <div class="timeline-content">
+                <h3>Petit-déjeuner local et balade à vélo</h3>
+                <p>Commencez la journée comme un vrai Pékinois : trouvez un petit stand de rue pour déguster un Jianbing (crêpe locale) et un lait de soja chaud. Ensuite, déverrouillez un vélo partagé (Meituan) et perdez-vous dans le labyrinthe des Hutongs autour de la Tour de la Cloche et du Tambour (Zhonggulou).</p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="time-badge">13:00</div>
+            <div class="timeline-content">
+                <h3>Le choc temporel : De la Cité Interdite au CBD</h3>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LongTrip | Vie Pratique à Pékin</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .pratique-hero {
+            background: linear-gradient(rgba(29, 53, 87, 0.8), rgba(29, 53, 87, 0.9)), url('https://images.unsplash.com/photo-1599571234909-29ed5d1321d6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+        }
+        .guide-container {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .guide-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--accent-blue);
+        }
+        .guide-card h3 { color: var(--primary-red); margin-top: 0; display: flex; align-items: center; gap: 10px;}
+        .guide-step {
+            background: var(--bg-beige);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .guide-container { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">LongTrip ✈️</div>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="itineraire.html">Itinéraire</a>
+            <a href="vie-pratique.html" style="color: var(--primary-red);">Vie Pratique</a>
+            <a href="nourriture.html">Nourriture</a>
+            <a href="a-propos.html">À Propos</a>
+        </nav>
+    </header>
+
+    <section class="hero pratique-hero">
+        <h1>Survivre et S'épanouir à Pékin</h1>
+        <p>Finies les angoisses concernant le quotidien ! Voici notre guide de survie ultime pour les applications, les paiements et les transports, spécialement conçu pour les étudiants internationaux.</p>
+    </section>
+
+    <div class="guide-container">
+        <div class="guide-card">
+            <h3>💸 Paiement : L'ère du 100% Digital</h3>
+            <p>À Pékin, l'argent liquide a presque disparu. Tout se paie avec le téléphone !</p>
+            <div class="guide-step">
+                <strong>1. Alipay (支付宝) :</strong> L'application indispensable. Vous pouvez désormais lier une carte bancaire internationale (Visa/Mastercard) directement !
+            </div>
+            <div class="guide-
